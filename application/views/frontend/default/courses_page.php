@@ -48,19 +48,21 @@ if (isset($sub_category_id)) {
 <section class="category-course-list-area">
     <div class="container">
         <div class="category-filter-box filter-box clearfix">
-            <span><?php echo get_phrase('showing_on_this_page'); ?> : <?php echo count($courses); ?></span>
-            <a href="javascript::" onclick="toggleLayout('grid')" style="float: right; font-size: 19px; margin-left: 5px;"><i class="fas fa-th"></i></a>
-            <a href="javascript::" onclick="toggleLayout('list')" style="float: right; font-size: 19px;"><i class="fas fa-th-list"></i></a>
-            <a href="<?php echo site_url('home/courses'); ?>" style="float: right; font-size: 19px; margin-right: 5px;"><i class="fas fa-sync-alt"></i></a>
+            <span style="float: right;"><?php echo get_phrase('showing_on_this_page'); ?> : <?php echo count($courses); ?></span>
+            <a href="javascript::" onclick="toggleLayout('grid')" style="float: left; font-size: 19px; margin-right: 5px;"><i class="fas fa-th"></i></a>
+            <a href="javascript::" onclick="toggleLayout('list')" style="float: left; font-size: 19px; margin-right: 5px;"><i class="fas fa-th-list"></i></a>
+            <a href="<?php echo site_url('home/courses'); ?>" style="float: left; font-size: 19px; margin-right: 5px;"><i class="fas fa-sync-alt"></i></a>
         </div>
         <div class="row">
             <div class="col-lg-3 filter-area">
                 <div class="card">
                     <a href="javascript::"  style="color: unset;">
-                        <div class="card-header filter-card-header" id="headingOne" data-toggle="collapse" data-target="#collapseFilter" aria-expanded="true" aria-controls="collapseFilter">
+                        <div class="card-header filter-card-header" id="headingOne"
+                             data-toggle="collapse" data-target="#collapseFilter" style="padding-bottom: 1.75rem"
+                             aria-expanded="true" aria-controls="collapseFilter">
                             <h6 class="mb-0">
-                                <?php echo get_phrase('filter'); ?>
-                                <i class="fas fa-sliders-h" style="float: right;"></i>
+                                <span style="float: right;"><?php echo get_phrase('filter'); ?></span>
+                                <i class="fas fa-sliders-h" style="float: left;"></i>
                             </h6>
                         </div>
                     </a>

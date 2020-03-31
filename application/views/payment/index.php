@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
 <head>
 	<title><?php echo $page_title.' | '.get_settings('system_name'); ?></title>
 

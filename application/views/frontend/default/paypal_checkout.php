@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
 <head>
   <title>Paypal | <?php echo get_settings('system_name');?></title>
   <meta charset="UTF-8">

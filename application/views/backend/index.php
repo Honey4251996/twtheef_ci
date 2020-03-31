@@ -6,7 +6,7 @@
     $logged_in_user_role = strtolower($this->session->userdata('role'));
 ?>
 <!DOCTYPE html>
-<html>
+<html dir="rtl">
 <head>
     <title><?php echo get_phrase($page_title); ?> | <?php echo $system_title; ?></title>
     <!-- all the meta tags -->

@@ -29,7 +29,7 @@ foreach ($my_courses as $my_course) {
 
 <section class="my-courses-area">
     <div class="container">
-        <div class="row align-items-baseline">
+        <div class="row align-items-end">
             <div class="col-lg-6">
                 <div class="my-course-filter-bar filter-box">
                     <span><?php echo get_phrase('filter_by'); ?></span>

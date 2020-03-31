@@ -19,7 +19,7 @@
         <div class="row" id = "cart_items_details">
             <div class="col-lg-9">
 
-                <div class="in-cart-box">
+                <div class="in-cart-box" style="float: right;">
                     <div class="title"><?php echo sizeof($this->session->userdata('cart_items')).' '.get_phrase('courses_in_cart'); ?></div>
                     <div class="">
                         <ul class="cart-course-list">

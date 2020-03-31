@@ -23,7 +23,7 @@
 <section class="category-course-list-area">
     <div class="container">
         <div class="row">
-            <div class="col" style="padding: 35px;">
+            <div class="col" style="padding: 35px; text-align: right;">
                 <?php echo get_frontend_settings('about_us'); ?>
             </div>
         </div>

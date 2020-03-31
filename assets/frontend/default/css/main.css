@@ -207,22 +207,22 @@ menu code was here
     border: 1px solid #f2f3f5;
     height: 45px;
     padding: 0 15px;
-    border-radius: 2px 0 0 2px;
+    border-radius: 2px 2px 0 0;
     font-size: 13px;
 }
 .search-box input:focus{
     background-color: #fff;
     border-color: #dedfe0;
-    border-right-color: transparent;
+    border-left-color: #fff;
 }
 .search-box input:focus + .input-group-append button{
     background-color: #fff;
     border-color: #dedfe0;
-    border-left-color: transparent;
+    border-right-color: transparent;
 }
 .search-box button{
     border: 1px solid #f2f3f5;
-    border-radius: 0 2px 2px 0;
+    border-radius: 0 0 2px 2px;
     font-size: 15px;
     padding: 10px 15px;
     background: #f2f3f5;
@@ -344,6 +344,7 @@ menu code was here
     float: left;
 }
 .course-list-dropdown .item-list .item .item-details {
+    padding-right: 0;
     padding-left: 70px;
 }
 .course-list-dropdown .item-list .item .item-details .course-name {
@@ -367,7 +368,8 @@ menu code was here
     color: #ec5252;
     font-size: 18px;
     font-weight: 600;
-    margin-right: 5px;
+    margin-left: 5px;
+    margin-right: 0;
 }
 .course-list-dropdown .item-list .item .item-details .original-price {
     text-decoration: line-through;
@@ -381,7 +383,8 @@ menu code was here
     color: #ec5252;
     font-size: 18px;
     font-weight: 600;
-    margin-right: 5px;
+    margin-left: 5px;
+    margin-right: 0;
 }
 .course-list-dropdown .item-list .item .item-details .original-price {
     text-decoration: line-through;
@@ -432,7 +435,8 @@ menu code was here
     color: #ec5252;
     font-size: 18px;
     font-weight: 600;
-    margin-right: 5px;
+    margin-left: 5px;
+    margin-left: 0;
 }
 .course-list-dropdown .dropdown-footer .cart-total-price .original-price {
     text-decoration: line-through;
@@ -507,7 +511,8 @@ menu code was here
     width: 64px;
 }
 .notification-list .notification .notification-details {
-    padding-left: 74px;
+    padding-right: 0;
+    paddig-left: 74px;
 }
 .notification-list .notification .notification-details .notification-text {
     display: block!important;
@@ -604,7 +609,9 @@ menu code was here
     border: 1px solid #f2f3f5;
 }
 .dropdown-user-info .user-details {
-    padding-left: 50px;
+    padding-right: 50px;
+    padding-left: 0;
+    text-align: right;
 }
 .dropdown-user-info .user-details .user-name {
     color: #29303b;
@@ -623,7 +630,9 @@ menu code was here
 }
 
 
-
+.user-dropdown-menu-item {
+    text-align: right;
+}
 
 
 
@@ -645,7 +654,8 @@ menu code was here
     border-radius: 2px;
     line-height: 1.35135;
     font-weight: 600;
-    margin-left: 5px !important;
+    margin-right: 5px !important;
+    margin-left: 0;
     border-radius: 2px !important;
 }
 .sign-in-box .btn-sign-in{
@@ -709,7 +719,8 @@ menu code was here
     display: inline-block;
     font-size: 20px;
     font-weight: 400;
-    margin-right: 10px;
+    margin-left: 10px;
+    margin-right: 0;
     padding: 15px 0 15px 5px;
     text-align: center;
     width: 50px;
@@ -873,7 +884,8 @@ menu code was here
 }
 .course-preview-modal .modal-title span {
     color:  #76c5d6;
-    margin-right: 5px;
+    margin-left: 5px;
+    margin-right: 0;
 }
 .course-preview-modal .close {
     color: #fff;
@@ -914,12 +926,14 @@ menu code was here
     -ms-flex: 0 0 82%;
     flex: 0 0 82%;
     max-width: 82%;
-    padding-left: 15px;
+    padding-right: 15px;
+    padding-left: 0;
     font-size: 13px;
 }
 .course-preview-modal .course-preview-video-list .course-preview-free-video .course-name i {
     font-size: 12px;
-    margin-right: 7px;
+    margin-left: 7px;
+    margin-right:0;
 }
 .course-preview-modal .course-preview-video-list li {
     padding: 7px 15px;
@@ -972,6 +986,8 @@ homepage styles
     color: #fff;
 }
 .home-banner-wrap{
+    direction: rtl;
+    text-align: right;
     max-width: 500px;
 }
 .home-banner-wrap h2{
@@ -1019,7 +1035,8 @@ homepage styles
     margin-bottom: 50px
 }
 .home-fact-box .text-box{
-    padding: 10px 0 10px 63px;
+    padding: 10px 63px 10px 0;
+    text-align: right;
 }
 .home-fact-box i{
     font-size: 47px;
@@ -1052,7 +1069,8 @@ homepage styles
 }
 .course-carousel-area .slick-slider{
     width: calc( 100% + 16px );
-    margin-left: -8px;
+    margin-right: -8px;
+    margin-left: 0;
 }
 .course-carousel-area .slick-list:before,
 .course-carousel-area .slick-list:after{
@@ -1247,20 +1265,23 @@ homepage styles
 .course-box .course-details .rating .rating-number span{
     font-weight: 600;
     color: #a1a7b3;
-    margin-left: 5px;
+    margin-right: 5px;
+    margin-left: 0;
 }
 .course-box .course-details .price{
     padding-bottom: 15px;
     color: #29303b;
     font-size: 18px;
     font-weight: 600;
-    margin-right: 10px;
+    margin-left: 10px;
+    margin-right: 0;
 }
 .course-box .course-details .price small{
     color: #686f7a;
     font-weight: 400;
     font-size: 13px;
-    margin-right: 5px;
+    margin-left: 5px;
+    margin-right: 0;
     text-decoration: line-through;
 }
 
@@ -1493,19 +1514,22 @@ homepage styles
 }
 
 .course-popover-content .course-category .course-badge {
-    margin-right: 10px;
+    margin-left: 10px;
+    margin-right: 0;
     box-shadow: 0 0 0;
 }
 
 .course-popover-content .course-meta span {
-    margin-right: 10px;
+    margin-left: 10px;
+    margin-right: 0;
     font-size: 13px;
     color: #7a7d82;
 }
 
 .course-popover-content .course-meta span i {
     font-size: 12px;
-    margin-right: 5px;
+    margin-right: 0;
+    margin-left: 5px;
 }
 
 .course-popover-content .course-meta {
@@ -1547,7 +1571,8 @@ homepage styles
 
 .course-popover-content .what-will-learn ul li {
     position: relative;
-    padding-left: 20px;
+    padding-right: 20px;
+    padding-left: 0;
     margin-bottom: 10px;
     max-height: 54px;
     visibility: visible;
@@ -1690,6 +1715,7 @@ section.course-header-area {
 
 .course-header-wrap > div > span {
     margin-right: 12px;
+    margin-left: 0;
     margin-bottom: 7px;
     font-size: 15px;
 }
@@ -1965,7 +1991,8 @@ course content
     display: flex;
     margin-bottom: 10px;
     width: 45%;
-    padding-left: 26px;
+    padding-right: 26px;
+    padding-left: 0;
     font-size: 15px;
     position: relative;
 }
@@ -1999,8 +2026,10 @@ course content
 
 .requirements-box .requirements__list {
     list-style: disc;
-    margin-left: 10px;
-    padding-left: 10px;
+    margin-right: 10px;
+    margin-left: 0;
+    padding-right: 10px;
+    padding-left: 0;
     margin-bottom: 0;
 }
 .requirements-box .requirements__list li:not(:last-child){
@@ -2050,7 +2079,8 @@ course content
 
 .course-comparism-item-container.this-course .course-comparism-item-this-text {
     font-size: 11px;
-    margin-left: 15px;
+    margin-right: 15px;
+    margin-left: 0;
     text-transform: uppercase;
     margin-bottom: -5px;
     margin-top: 5px;
@@ -2066,7 +2096,8 @@ course content
 }
 
 .course-comparism-item .item-title {
-    padding-left: 15px;
+    padding-right: 15px;
+    padding-left: 0;
     width: 39%;
 }
 
@@ -2085,7 +2116,8 @@ course content
 .course-comparism-item .item-details {
     position: relative;
     width: 43%;
-    padding-left: 15px;
+    padding-right: 15px;
+    padding-left: 0;
 }
 .course-comparism-item .item-details .wishlist-btn {
     position: absolute;
@@ -2135,7 +2167,8 @@ course content
     text-decoration: line-through;
 }
 .course-comparism-item .item-details .enrolled-student {
-    margin-left: 25px;
+    margin-left: 0;
+    margin-right: 25px;
 }
 
 .course-comparism-item .item-details .enrolled-student i {
@@ -2153,7 +2186,7 @@ course content
 .more-by-instructor-box .more-by-instructor-title {
     font-size: 22px;
     font-weight: 600;
-    margin: 0 0 10px 7px;
+    margin: 0 7px 10px 0;
 }
 .about-instructor-box .about-instructor-title {
     display: block;
@@ -2272,12 +2305,14 @@ course content
 }
 
 .student-feedback-box .individual-rating li > div:not(.progress) {
-    padding-left: 15px;
+    padding-right: 15px;
+    padding-left: 0;
 }
 
 .student-feedback-box .individual-rating li > div:not(.progress) span:not(.rating) {
     text-align: center;
-    padding-left: 10px;
+    padding-right: 10px;
+    padding-left: 0;
     color: #007791;
 }
 .student-feedback-box .reviews .reviews-title {
@@ -2297,7 +2332,8 @@ course content
     height: 46px;
     width: 46px;
     border-radius: 50%;
-    margin-right: 20px;
+    margin-left: 20px;
+    margin-right: 0;
 }
 .student-feedback-box .reviews .reviewer-details .review-time .time {
     color: #686f7a;
@@ -2376,7 +2412,7 @@ course content
 
 .course-curriculum-accordion .lecture-group-title {
     position: relative;
-    padding: 10px 30px 10px 45px;
+    padding: 10px 45px 10px 30px;
     background: #f9f9f9;
     border: 1px solid #e8e9eb;
     cursor: pointer;
@@ -2424,7 +2460,7 @@ course content
 }
 
 .course-curriculum-accordion .lecture-list .lecture {
-    padding: 12px 30px 12px 73px;
+    padding: 12px 73px 12px 30px;
     position: relative;
     border-bottom: 1px solid #e8e9eb;
     border-left: 1px solid #e8e9eb;
@@ -2491,6 +2527,7 @@ section.category-header-area {
 }
 
 section.category-header-area .category-name {
+    text-align: right;
     font-size: 30px;
     font-weight: 400;
     line-height: 1.287;
@@ -2522,6 +2559,7 @@ section.category-header-area .category-name {
 }
 
 section.category-course-list-area {
+    text-align: right;
     padding-bottom: 50px;
 }
 .category-filter-box {
@@ -2542,7 +2580,8 @@ section.category-course-list-area {
 }
 
 .filter-box .btn:not(.all-btn) {
-    margin-left: 10px;
+    margin-left: 0;
+    margin-right: 10px;
 }
 
 .filter-box .btn:hover,
@@ -2635,7 +2674,8 @@ section.category-course-list-area {
     color: #686f7a;
     font-size: 15px;
     font-weight: 400;
-    margin-left: 5px;
+    margin-left: 0;
+    margin-right: 5px;
     text-decoration: line-through;
 }
 
@@ -2679,7 +2719,8 @@ section.category-course-list-area {
 
 .course-box-2 .course-details .course-meta span {
     font-size: 13px;
-    margin-right: 10px;
+    margin-left: 10px;
+    margin-right: 0;
     color: #686f7a;
 }
 
@@ -2690,7 +2731,8 @@ section.category-course-list-area {
 .course-box-2 .course-details .course-meta span i {
     opacity: 0.5;
     font-size: 14px;
-    margin-right: 4px;
+    margin-right: 0;
+    margin-left: 4px;
 }
 
 
@@ -2806,7 +2848,8 @@ ul.pagination .page-item .page-link {
     font-size: 17px;
     position: relative;
     display: block;
-    margin-left: -1px;
+    margin-left: 0;
+    margin-right: -1px;
     line-height: 1.25;
     background-color: #fff;
     border: 1px solid #dee2e6;
@@ -2830,6 +2873,7 @@ Notifications page
 section.page-header-area {
     padding: 40px 0 30px;
     background: #505763;
+    text-align: right;
     color: #fff;
 }
 
@@ -2894,7 +2938,8 @@ section.page-header-area.my-course-area ul {
 }
 section.page-header-area.my-course-area ul li {
     display: inline-block;
-    margin-right: 30px;
+    margin-left: 30px;
+    margin-right: 0;
 }
 section.page-header-area.my-course-area ul li a {
     padding: 0 0 5px;
@@ -2909,6 +2954,10 @@ section.page-header-area.my-course-area ul li a:hover {
 section.my-courses-area .my-course-search-bar .input-group {
     width: 220px;
     margin-left: auto;
+    margin-right: 0;
+}
+.my-course-search-bar {
+    float: left;
 }
 section.my-courses-area {
     padding: 40px 0;
@@ -2945,11 +2994,12 @@ section.my-courses-area {
 .my-course-filter-bar.filter-box {
     position: relative;
     padding-top: 30px;
+    text-align: right;
 }
 .my-course-filter-bar.filter-box >span {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     color: #686f7a;
     font-size: 13px;
 }
@@ -2978,7 +3028,8 @@ section.my-courses-area {
     padding-bottom: 50px;
 }
 .modal-course-preview-box {
-    padding-left: 50px;
+    padding-right: 50px;
+    padding-left: 0;
 }
 .modal-course-preview-box .card-title {
     line-height: 24px;
@@ -3149,7 +3200,8 @@ section.cart-list-area {
     -ms-flex: 0 0 53%;
     flex: 0 0 53%;
     max-width: 53%;
-    padding-left: 10px;
+    padding-right: 10px;
+    padding-left: 0;
 }
 .cart-course-wrapper .details .name {
     display: block!important;
@@ -3195,7 +3247,8 @@ section.cart-list-area {
 }
 .cart-course-wrapper .move-remove {
     text-align: right;
-    padding-left: 10px;
+    padding-right: 10px;
+    padding-left: 0;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 15%;
     flex: 0 0 15%;
@@ -3253,7 +3306,8 @@ section.cart-list-area {
 }
 .cart-sidebar .total-original-price .original-price {
     text-decoration: line-through;
-    margin-right: 10px;
+    margin-left: 10px;
+    margin-right: 0;
 }
 .cart-sidebar .checkout-btn {
     font-size: 15px;
@@ -3343,7 +3397,7 @@ section.user-dashboard-area {
 
 .user-dashboard-sidebar {
     width: 18%;
-    border-right: 1px solid #dedfe0;
+    border-left: 1px solid #dedfe0;
 }
 
 .user-dashboard-content {
@@ -3382,6 +3436,7 @@ section.user-dashboard-area {
     padding: 0;
     margin: 0;
     list-style: none;
+    text-align: right;
 }
 
 .user-dashboard-sidebar .user-dashboard-menu ul a {
@@ -3477,6 +3532,7 @@ section.user-dashboard-area {
 .user-dashboard-content .content-box .email-group,
 .user-dashboard-content .content-box .password-group{
     padding: 10px 0;
+    text-align: right;
 }
 .user-dashboard-content .content-box .password-group{
     padding-bottom: 30px;
@@ -3497,6 +3553,8 @@ my message page
 
 .message-sender-list-box {
     padding-top: 10px;
+    /*float: right;*/
+    width:100%;
 }
 .message-sender-list-box .compose-btn {
     color: #007791;
@@ -3514,7 +3572,7 @@ my message page
     margin: 0;
     padding: 0;
     list-style: none;
-    padding: 0 10px 10px 0;
+    padding: 0 0 10px 10px;
     position: relative;
     min-height: 280px;
     height: calc(100vh - 380px);
@@ -3543,7 +3601,8 @@ my message page
     font-size: 15px;
     font-weight: 700;
     color: #505763;
-    margin-left: 15px;
+    margin-right: 15px;
+    margin-left: 0;
 }
 .message-sender-list-box .message-sender-list .message-time {
     font-size: 13px;
@@ -3576,7 +3635,8 @@ my message page
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    margin-right: 15px;
+    margin-left: 15px;
+    margin-right: 0;
 }
 .message-details-box .message-details .message-header {
     min-height: 65px;
@@ -3683,8 +3743,8 @@ my message page
     border: 1px solid #adadad;
     border-radius: 50%;
     color: #adadad;
-    margin-right: 15px;
-    margin-left: 10px;
+    margin-right: 10px;
+    margin-left: 15px;
 }
 .new-message-details .message-body {
     padding: 10px;
@@ -3785,6 +3845,7 @@ section.purchase-history-list-area {
 .purchase-history-list .purchase-history-list-title {
     font-size: 18px;
     font-weight: 600;
+    float: right;
     margin-bottom: 0;
 }
 .purchase-history-list .purchase-history-course-img {
@@ -3792,7 +3853,8 @@ section.purchase-history-list-area {
 }
 .purchase-history-list .purchase-history-course-img img{
     width: 135px;
-    margin-right: 15px;
+    margin-right: 0;
+    margin-left: 15px;
     height: auto;
 }
 .purchase-history-list .purchase-history-course-title {
@@ -3873,7 +3935,8 @@ footer style
 }
 .language-widget button i{
     font-size: 11px;
-    margin-right: 10px;
+    margin-left: 10px;
+    margin-right: 0;
 }
 .language-widget .dropdown-menu {
     box-shadow: 0 4px 16px rgba(20,23,28,.25);
@@ -3921,10 +3984,12 @@ footer style
     margin-bottom: 0;
 }
 .copyright-text img{
-    margin-right: 20px
+    margin-left: 20px;
+    margin-right: 0;
 }
 .footer-menu .nav-item:not(:last-child){
-    margin-right: 20px;
+    margin-right: 0;
+    margin-left: 20px;
 }
 .footer-menu .nav-link{
     padding: 6px 0;
@@ -4023,7 +4088,8 @@ div.tagsinput span.tag a {
 .custom-radio:not(:checked) + label
 {
     position: relative;
-    padding-left: 28px;
+    padding-right: 28px;
+    padding-left: 0;
     cursor: pointer;
     line-height: 20px;
     display: inline-block;
@@ -4033,7 +4099,8 @@ div.tagsinput span.tag a {
 .custom-radio:not(:checked) + label:before {
     content: '';
     position: absolute;
-    left: 0;
+    right: 0;
+    left: auto;
     top: 0;
     width: 18px;
     height: 18px;
@@ -4049,7 +4116,8 @@ div.tagsinput span.tag a {
     background: #eb5252;
     position: absolute;
     top: 3px;
-    left: 3px;
+    right: 3px;
+    left: auto;
     border-radius: 100%;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;

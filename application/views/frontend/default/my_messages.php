@@ -24,7 +24,9 @@
         <div class="row no-gutters align-items-stretch">
             <div class="col-lg-5">
                 <div class="message-sender-list-box">
-                    <button class="btn compose-btn" type="button" id="NewMessage" onclick="NewMessage(event)">Compose</button>
+                    <div class="d-flex align-items-center w-100">
+                        <button class="btn compose-btn" type="button" id="NewMessage" onclick="NewMessage(event)">Compose</button>
+                    </div>
                     <hr>
                     <ul class="message-sender-list">
 

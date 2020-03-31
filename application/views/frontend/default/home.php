@@ -24,7 +24,7 @@
             <?php $courses = $this->crud_model->get_courses(); ?>
             <div class="col-md-4 d-flex">
                 <div class="home-fact-box mr-md-auto ml-auto mr-auto">
-                    <i class="fas fa-bullseye float-left"></i>
+                    <i class="fas fa-bullseye float-right"></i>
                     <div class="text-box">
                         <h4><?php
                         $status_wise_courses = $this->crud_model->get_status_wise_courses();
@@ -37,7 +37,7 @@
 
             <div class="col-md-4 d-flex">
                 <div class="home-fact-box mr-md-auto ml-auto mr-auto">
-                    <i class="fa fa-check float-left"></i>
+                    <i class="fa fa-check float-right"></i>
                     <div class="text-box">
                         <h4><?php echo get_phrase('expert_instruction'); ?></h4>
                         <p><?php echo get_phrase('find_the_right_course_for_you'); ?></p>
@@ -47,7 +47,7 @@
 
             <div class="col-md-4 d-flex">
                 <div class="home-fact-box mr-md-auto ml-auto mr-auto">
-                    <i class="fa fa-clock float-left"></i>
+                    <i class="fa fa-clock float-right"></i>
                     <div class="text-box">
                         <h4><?php echo get_phrase('lifetime_access'); ?></h4>
                         <p><?php echo get_phrase('learn_on_your_schedule'); ?></p>

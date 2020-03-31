@@ -4,7 +4,7 @@
 }
 
 .alignToTitle {
-  float: right;
+  float: left;
 }
 
 .required {
@@ -268,4 +268,53 @@ body.show {
   color: #6a7b66;
   text-align: center;
   padding-top: 100px;
+}
+
+body[data-layout=detached] .content-page {
+  margin-right: 0;
+  overflow: hidden;
+  padding: 0 30px 5px 15px;
+  position: relative;
+  margin-left: -15px;
+  width: 100%;
+  padding-bottom: 60px;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  text-align: right;
+}
+
+div .dataTables_wrapper {
+  direction: rtl;
+}
+
+div.dataTables_wrapper {
+  direction: rtl;
+}
+
+/* Ensure that the demo table scrolls */
+th, td { white-space: nowrap; }
+div.dataTables_wrapper {
+  margin: 0 auto;
+}
+
+.card-body {
+  text-align: right;
+}
+
+div.dataTables_wrapper div.dataTables_filter {
+  text-align: left;
+}
+
+.topnav-navbar .topnav-logo {
+  float: right;
+  padding: 0 0 0 20px;
+}
+
+.visit_website {
+  float: right;
+}
+.navbar-custom .topbar-right-menu .nav-link {
+  margin: 0 0;
 }

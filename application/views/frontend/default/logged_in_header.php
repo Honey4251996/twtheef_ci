@@ -70,7 +70,7 @@ $user_details = $this->user_model->get_user($this->session->userdata('user_id'))
                             <li class="dropdown-user-info">
                                 <a href="">
                                     <div class="clearfix">
-                                        <div class="user-image float-left">
+                                        <div class="user-image float-right">
                                             <?php if (file_exists('uploads/user_image/'.$user_details['id'].'.jpg')): ?>
                                                 <img src="<?php echo base_url().'uploads/user_image/'.$user_details['id'].'.jpg';?>" alt="" class="img-fluid">
                                             <?php else: ?>
