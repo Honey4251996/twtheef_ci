@@ -6,7 +6,7 @@ $instructor_details = $this->user_model->get_all_user($course_details['user_id']
   <div class="container">
     <div class="row align-items-end">
       <div class="col-lg-8">
-        <div class="course-header-wrap">
+        <div class="course-header-wrap" style="text-align: right;">
           <h1 class="title"><?php echo $course_details['title']; ?></h1>
           <p class="subtitle"><?php echo $course_details['short_description']; ?></p>
           <div class="rating-row">
@@ -36,16 +36,17 @@ $instructor_details = $this->user_model->get_all_user($course_details['user_id']
           </span>
         </div>
         <div class="created-row">
-          <span class="created-by">
+
+          <span class="comment"><?php echo ucfirst($course_details['language']); ?><i class="fas fa-comment"></i></span>
+            <?php if ($course_details['last_modified'] > 0): ?>
+                <span class="last-updated-date"><?php echo get_phrase('last_updated').' '.date('D, d-M-Y', $course_details['last_modified']); ?></span>
+            <?php else: ?>
+                <span class="last-updated-date"><?php echo get_phrase('last_updated').' '.date('D, d-M-Y', $course_details['date_added']); ?></span>
+            <?php endif; ?>
+            <span class="created-by">
             <?php echo get_phrase('created_by'); ?>
-            <a href="<?php echo site_url('home/instructor_page/'.$course_details['user_id']); ?>"><?php echo $instructor_details['first_name'].' '.$instructor_details['last_name']; ?></a>
+                <a href="<?php echo site_url('home/instructor_page/'.$course_details['user_id']); ?>"><?php echo $instructor_details['first_name'].' '.$instructor_details['last_name']; ?></a>
           </span>
-          <?php if ($course_details['last_modified'] > 0): ?>
-            <span class="last-updated-date"><?php echo get_phrase('last_updated').' '.date('D, d-M-Y', $course_details['last_modified']); ?></span>
-          <?php else: ?>
-            <span class="last-updated-date"><?php echo get_phrase('last_updated').' '.date('D, d-M-Y', $course_details['date_added']); ?></span>
-          <?php endif; ?>
-          <span class="comment"><i class="fas fa-comment"></i><?php echo ucfirst($course_details['language']); ?></span>
         </div>
       </div>
     </div>
@@ -75,8 +76,8 @@ $instructor_details = $this->user_model->get_all_user($course_details['user_id']
         <br>
         <div class="course-curriculum-box">
           <div class="course-curriculum-title clearfix">
-            <div class="title float-left"><?php echo get_phrase('curriculum_for_this_course'); ?></div>
-            <div class="float-right">
+            <div class="title float-right"><?php echo get_phrase('curriculum_for_this_course'); ?></div>
+            <div class="float-left">
               <span class="total-lectures">
                 <?php echo $this->crud_model->get_lessons('course', $course_details['id'])->num_rows().' '.get_phrase('lessons'); ?>
               </span>
@@ -171,7 +172,7 @@ $instructor_details = $this->user_model->get_all_user($course_details['user_id']
                   <div class="updated-time"><?php echo get_phrase('updated').' '.date('D, d-M-Y', $other_realted_course['date_added']); ?></div>
                 <?php endif; ?>
               </div>
-              <div class="item-details float-left">
+              <div class="item-details float-right">
                 <span class="item-rating">
                   <i class="fas fa-star"></i>
                   <?php

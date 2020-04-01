@@ -318,3 +318,17 @@ div.dataTables_wrapper div.dataTables_filter {
 .navbar-custom .topbar-right-menu .nav-link {
   margin: 0 0;
 }
+
+.custom-file-label::after {
+  left: 0;
+  right: auto;
+}
+
+.side-nav .menu-arrow {
+  /*left: 30px;*/
+  right: auto;
+}
+
+.side-nav .side-nav-link i {
+  margin: 0 3px 0 10px;
+}

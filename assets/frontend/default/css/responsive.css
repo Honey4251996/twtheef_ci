@@ -111,7 +111,8 @@
     }
     .main-nav-wrap>ul>li>ul ul{
         top: 0;
-        left: 270px;
+        right: 270px;
+        left: auto;
     }
     .main-nav-wrap ul li li{
         width: 270px;

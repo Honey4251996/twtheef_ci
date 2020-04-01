@@ -23,9 +23,9 @@ html[dir="rtl"] .copyright-text{
     float: right;
 }
 
-html[dir="rtl"] .course-carousel-area .container-lg .row {
-    float: right;
-}
+/*html[dir="rtl"] .course-carousel-area .container-lg .row {*/
+    /*float: right;*/
+/*}*/
 
 html[dir="rtl"] .filter-box .btn:not(.all-btn) {
     margin-left: 0px;

@@ -33,12 +33,12 @@
                      <span class="d-inline-block average-rating"><?php echo $average_ceil_rating; ?></span>
                  </div>
                  <?php if ($course['is_free_course'] == 1): ?>
-                     <p class="price text-right"><?php echo get_phrase('free'); ?></p>
+                     <p class="price text-left"><?php echo get_phrase('free'); ?></p>
                  <?php else: ?>
                      <?php if ($course['discount_flag'] == 1): ?>
-                         <p class="price text-right"><small><?php echo currency($course['price']); ?></small><?php echo currency($course['discounted_price']); ?></p>
+                         <p class="price text-left"><small><?php echo currency($course['price']); ?></small><?php echo currency($course['discounted_price']); ?></p>
                      <?php else: ?>
-                         <p class="price text-right"><?php echo currency($course['price']); ?></p>
+                         <p class="price text-left"><?php echo currency($course['price']); ?></p>
                      <?php endif; ?>
                  <?php endif; ?>
              </div>

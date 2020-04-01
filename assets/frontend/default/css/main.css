@@ -1066,26 +1066,28 @@ homepage styles
     font-size: 20px;
     color: #505763;
     margin: 0 0 10px;
+    text-align: right;
 }
 .course-carousel-area .slick-slider{
     width: calc( 100% + 16px );
-    margin-right: -8px;
     margin-left: 0;
+    margin-right: -8px;
 }
 .course-carousel-area .slick-list:before,
 .course-carousel-area .slick-list:after{
     position: absolute;
     content: "";
     top:0;
-    right: 0;
+    left: 0;
+    right: auto;
     height: 100%;
     width: 8px;
     background: #f7f8fa;
     z-index: 1;
 }
 .course-carousel-area .slick-list:after{
-    right: auto;
-    left: 0
+    right: 0;
+    left: auto
 }
 
 .course-carousel .slick-prev:hover,
@@ -1108,7 +1110,8 @@ homepage styles
     top: calc( 50% - 25px);
 }
 .course-carousel .slick-prev{
-    left: -28px;
+    right: -28px;
+    left: auto;
 }
 .course-carousel .slick-prev.slick-disabled,
 .course-carousel .slick-next.slick-disabled{
@@ -1120,7 +1123,8 @@ homepage styles
     opacity: 1
 }
 .course-carousel .slick-next{
-    right: -15px
+    left: -15px;
+    right: auto;
 }
 .course-carousel .slick-next:before{
     content: url(../img/icons/next_arrow.png);
@@ -1204,6 +1208,7 @@ homepage styles
 .course-box .course-details{
     padding: 15px 10px 0px 15px;
     position: relative;
+    text-align: right;
 }
 .course-box .course-details .title{
     display: block!important;
@@ -1514,22 +1519,22 @@ homepage styles
 }
 
 .course-popover-content .course-category .course-badge {
-    margin-left: 10px;
-    margin-right: 0;
+    margin-right: 10px;
+    margin-left: 0;
     box-shadow: 0 0 0;
 }
 
 .course-popover-content .course-meta span {
-    margin-left: 10px;
-    margin-right: 0;
+    margin-right: 10px;
+    margin-left: 0;
     font-size: 13px;
     color: #7a7d82;
 }
 
 .course-popover-content .course-meta span i {
     font-size: 12px;
-    margin-right: 0;
-    margin-left: 5px;
+    margin-left: 0;
+    margin-right: 5px;
 }
 
 .course-popover-content .course-meta {
@@ -1571,8 +1576,8 @@ homepage styles
 
 .course-popover-content .what-will-learn ul li {
     position: relative;
-    padding-right: 20px;
-    padding-left: 0;
+    padding-right: 0;
+    padding-left: 20px;
     margin-bottom: 10px;
     max-height: 54px;
     visibility: visible;
@@ -1599,7 +1604,8 @@ homepage styles
     content: ".";
     font-weight: 900;
     position: absolute;
-    left: 0;
+    right: 0;
+    left: auto;
     top: 2px;
     font-size: 30px;
     line-height: 0;
@@ -1608,7 +1614,8 @@ homepage styles
 
 .course-popover-content .popover-btns {
     margin-top: 50px;
-    padding-right: 65px;
+    padding-left: 65px;
+    padding-right: 0;
     position: relative;
     margin-bottom: 15px;
 }
@@ -1631,7 +1638,8 @@ homepage styles
 
 .course-popover-content .popover-btns .wishlist-btn {
     position: absolute;
-    right: 8px;
+    left: 8px;
+    right: 0;
     top: 8px;
     border: none;
     background: none;
@@ -1650,13 +1658,13 @@ homepage styles
 .webui-popover.left>.webui-arrow,
 .webui-popover.left-top>.webui-arrow,
 .webui-popover.left-bottom>.webui-arrow {
-    border-left-color: rgba(20,23,28,.1);
+    border-right-color: rgba(20,23,28,.1);
 }
 .webui-popover.right>.webui-arrow,
 .webui-popover.right-top>.webui-arrow,
 .webui-popover.right-bottom>.webui-arrow {
-    border-right-color: #999;
-    border-right-color: rgba(20,23,28,.1);
+    border-left-color: #999;
+    border-left-color: rgba(20,23,28,.1);
 }
 
 
@@ -1738,8 +1746,9 @@ section.course-header-area {
 }
 
 .course-header-wrap .comment i {
-    margin-right: 7px;
+    margin-left: 7px;
     font-size: 13px;
+    display: unset;
 }
 
 
@@ -1816,6 +1825,7 @@ course sidebar
 }
 .course-sidebar-text-box {
     padding: 15px 30px;
+    text-align: right;
 }
 
 .course-sidebar-text-box .price .current-price {
@@ -1941,6 +1951,7 @@ course content
     max-height: 260px;
     margin-top: 40px;
     margin-bottom: 40px;
+    text-align: right;
 }
 .description-box ul{
     list-style: disc;
@@ -1971,6 +1982,7 @@ course content
     border: 1px solid #dedfe0;
     padding: 10px 15px;
     margin-top: 40px;
+    text-align: right;
 }
 
 .what-you-get-box .what-you-get-title {
@@ -2022,6 +2034,7 @@ course content
     font-size: 22px;
     font-weight: 600;
     margin: 0 0 10px;
+    text-align: right;
 }
 
 .requirements-box .requirements__list {
@@ -2031,6 +2044,7 @@ course content
     padding-right: 10px;
     padding-left: 0;
     margin-bottom: 0;
+    text-align: right;
 }
 .requirements-box .requirements__list li:not(:last-child){
     margin-bottom: 10px;
@@ -2047,6 +2061,7 @@ course content
     font-size: 22px;
     font-weight: 600;
     margin: 0 0 15px;
+    text-align: right;
 }
 
 .course-comparism-item .item-image {
@@ -2227,6 +2242,7 @@ course content
 
 .about-instructor-box {
     margin-bottom: 40px;
+    text-align: right;
 }
 
 .about-instructor-details .instructor-name {
@@ -2244,6 +2260,7 @@ course content
 }
 .student-feedback-box {
     margin: 50px 0;
+    text-align: right;
 }
 
 .student-feedback-box .student-feedback-title {

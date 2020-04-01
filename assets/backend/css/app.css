@@ -3198,7 +3198,8 @@ input[type="button"].btn-block {
   .custom-file-label::after {
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
+    right: auto;
     bottom: 0;
     z-index: 3;
     display: block;

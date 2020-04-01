@@ -39,12 +39,12 @@ if (sizeof($my_courses) > 0):
                             <p class="d-inline-block rating-number">4.5<span>(23,990)</span></p>
                         </div> -->
                         <?php if ($my_course['is_free_course'] == 1): ?>
-                            <p class="price text-right"><?php echo get_phrase('free'); ?></p>
+                            <p class="price text-left"><?php echo get_phrase('free'); ?></p>
                         <?php else: ?>
                             <?php if ($my_course['discount_flag'] == 1): ?>
-                                <p class="price text-right"><small><?php echo currency($my_course['price']); ?></small><?php echo currency($my_course['discounted_price']); ?></p>
+                                <p class="price text-left"><small><?php echo currency($my_course['price']); ?></small><?php echo currency($my_course['discounted_price']); ?></p>
                             <?php else: ?>
-                                <p class="price text-right"><?php echo currency($my_course['price']); ?></p>
+                                <p class="price text-left"><?php echo currency($my_course['price']); ?></p>
                             <?php endif; ?>
                         <?php endif; ?>
                     </div>

@@ -97,12 +97,12 @@
                                     <span class="d-inline-block average-rating"><?php echo $average_ceil_rating; ?></span>
                                 </div>
                                 <?php if ($top_course['is_free_course'] == 1): ?>
-                                    <p class="price text-right"><?php echo get_phrase('free'); ?></p>
+                                    <p class="price text-left"><?php echo get_phrase('free'); ?></p>
                                 <?php else: ?>
                                     <?php if ($top_course['discount_flag'] == 1): ?>
-                                        <p class="price text-right"><small><?php echo currency($top_course['price']); ?></small><?php echo currency($top_course['discounted_price']); ?></p>
+                                        <p class="price text-left"><small><?php echo currency($top_course['price']); ?></small><?php echo currency($top_course['discounted_price']); ?></p>
                                     <?php else: ?>
-                                        <p class="price text-right"><?php echo currency($top_course['price']); ?></p>
+                                        <p class="price text-left"><?php echo currency($top_course['price']); ?></p>
                                     <?php endif; ?>
                                 <?php endif; ?>
                             </div>
@@ -110,7 +110,7 @@
                     </a>
 
                     <div class="webui-popover-content">
-                        <div class="course-popover-content">
+                        <div class="course-popover-content" style="text-align: right;">
                             <?php if ($top_course['last_modified'] == ""): ?>
                                 <div class="last-updated"><?php echo get_phrase('last_updater').' '.date('D, d-M-Y', $top_course['date_added']); ?></div>
                             <?php else: ?>
@@ -231,12 +231,12 @@
                                     <span class="d-inline-block average-rating"><?php echo $average_ceil_rating; ?></span>
                                 </div>
                                 <?php if ($latest_course['is_free_course'] == 1): ?>
-                                    <p class="price text-right"><?php echo get_phrase('free'); ?></p>
+                                    <p class="price text-left"><?php echo get_phrase('free'); ?></p>
                                 <?php else: ?>
                                     <?php if ($latest_course['discount_flag'] == 1): ?>
-                                        <p class="price text-right"><small><?php echo currency($latest_course['price']); ?></small><?php echo currency($latest_course['discounted_price']); ?></p>
+                                        <p class="price text-left"><small><?php echo currency($latest_course['price']); ?></small><?php echo currency($latest_course['discounted_price']); ?></p>
                                     <?php else: ?>
-                                        <p class="price text-right"><?php echo currency($latest_course['price']); ?></p>
+                                        <p class="price text-left"><?php echo currency($latest_course['price']); ?></p>
                                     <?php endif; ?>
                                 <?php endif; ?>
                             </div>

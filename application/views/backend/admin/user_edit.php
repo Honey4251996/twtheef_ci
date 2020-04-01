@@ -198,11 +198,11 @@
                             </div>
 
                             <ul class="list-inline mb-0 wizard">
-                                <li class="previous list-inline-item">
-                                    <a href="javascript::" class="btn btn-info">Previous</a>
-                                </li>
-                                <li class="next list-inline-item float-right">
+                                <li class="next list-inline-item">
                                     <a href="javascript::" class="btn btn-info">Next</a>
+                                </li>
+                                <li class="previous list-inline-item float-right">
+                                    <a href="javascript::" class="btn btn-info">Previous</a>
                                 </li>
                             </ul>
 

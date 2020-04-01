@@ -711,5 +711,15 @@
     "paystack_currency": "Paystack currency",
     "select_paystack_currency": "Select paystack currency",
     "update_paystack_keys": "Update paystack keys",
-    "$45": "$45"
+    "$45": "$45",
+    "$1500": "$1500",
+    "manage_profile": "Manage profile",
+    "a_short_title_about_yourself": "A short title about yourself",
+    "the_image_size_should_be_any_square_image": "The image size should be any square image",
+    "choose_file": "Choose file",
+    "update_profile": "Update profile",
+    "current_password": "Current password",
+    "new_password": "New password",
+    "confirm_new_password": "Confirm new password",
+    "update_password": "Update password"
 }
