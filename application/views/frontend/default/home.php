@@ -68,7 +68,7 @@
                     $cart_items = $this->session->userdata('cart_items');
                     foreach ($top_courses as $top_course):?>
                     <div class="course-box-wrap">
-                        <a href="<?php echo site_url('home/course/'.slugify($top_course['title']).'/'.$top_course['id']); ?>" class="has-popover">
+                        <a href="<?php echo site_url('home/course/'.$top_course['id'].'/'.slugify($top_course['title'])); ?>" class="has-popover">
                             <div class="course-box">
                                 <!-- <div class="course-badge position best-seller">Best seller</div> -->
                                 <div class="course-image">
@@ -199,7 +199,7 @@
                     $latest_courses = $this->crud_model->get_latest_10_course();
                     foreach ($latest_courses as $latest_course):?>
                     <div class="course-box-wrap">
-                        <a href="<?php echo site_url('home/course/'.slugify($latest_course['title']).'/'.$latest_course['id']); ?>">
+                        <a href="<?php echo site_url('home/course/'.$latest_course['id'].'/'.slugify($latest_course['title'])); ?>">
                             <div class="course-box">
                                 <div class="course-image">
                                     <img src="<?php echo $this->crud_model->get_course_thumbnail_url($latest_course['id']); ?>" alt="" class="img-fluid">
